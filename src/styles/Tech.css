@@ -1,0 +1,119 @@
+.tech {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.tech h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.tech-subtitle {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.tech-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+ padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all .3s ease;
+
+  cursor: pointer;
+}
+.tech-card:hover {
+  transform: translateY(-10px) scale(1.05);
+
+  border-color: #3b82f6;
+
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.25);
+
+  background: #263548;
+}
+
+.tech-card:hover .tech-icon {
+  transform: rotate(10deg) scale(1.15);
+}
+.tech-icon {
+  font-size: 52px;
+  margin-bottom: 20px;
+  transition: all .3s ease;
+}
+.tech-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* React */
+.tech-icon.react {
+  color: #61DAFB;
+}
+
+/* TypeScript */
+.tech-icon.typescript {
+  color: #3178C6;
+}
+
+/* JavaScript */
+.tech-icon.javascript {
+  color: #F7DF1E;
+}
+
+/* Node */
+.tech-icon.node {
+  color: #339933;
+}
+
+/* Express */
+.tech-icon.express {
+  color: #ffffff;
+}
+
+/* Git */
+.tech-icon.git {
+  color: #F05032;
+}
+
+/* GitHub */
+.tech-icon.github {
+  color: #ffffff;
+}
+
+
+
+
+
+@media (max-width:900px){
+
+    .tech-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

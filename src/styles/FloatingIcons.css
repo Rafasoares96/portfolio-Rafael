@@ -1,0 +1,51 @@
+.floating-icons{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+.floating-icon{
+
+    position:absolute;
+
+    font-size:70px;
+
+    opacity:.08;
+
+}
+
+.react{
+    color:#61DAFB;
+}
+
+.ts{
+    color:#3178C6;
+}
+
+.js{
+    color:#F7DF1E;
+}
+
+.node{
+    color:#339933;
+}
+
+.git{
+    color:#F05032;
+}
+
+.github{
+    color:white;
+}
+
+.native{
+    color:#61DAFB;
+}
