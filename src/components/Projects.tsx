@@ -3,19 +3,19 @@ import "../styles/Projects.css";
 function Projects() {
   const projects = [
     {
-      title: "SuperViaApp",
+      title: "Code Café",
       description:
-        "Aplicativo mobile desenvolvido em React Native para consulta de trens, rotas e informações da SuperVia.",
-      tech: "React Native • TypeScript",
-      github: "#",
+        "Aplicação desenvolvida em HTML CSS JAVA SCRIPT para elevar minhas habilidades front end, em breve adicionarei Back End",
+      tech: "HTML • CSS • JavaScript",
+      github: "https://github.com/Rafasoares96/cafeteria.git",
       demo: "#",
     },
     {
       title: "RJMax Energia Solar",
       description:
-        "Site institucional responsivo para empresa de energia solar, com painel administrativo e galeria dinâmica.",
+        "Site responsivo para empresa de energia solar, com painel administrativo e galeria dinâmica, Projeto real.",
       tech: "HTML • CSS • JavaScript • Node.js",
-      github: "#",
+      github: "https://github.com/Rafasoares96/site-loja-placa-solar-front.git",
       demo: "https://rjmaxenergiasolar.com.br/",
     },
   ];
