@@ -1,13 +1,55 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="../assets/rafael.jpg" href="/rafael.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-rafael</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rafael.dev | Desenvolvedor Full Stack</title>
+
+  <style>
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity .6s ease;
+    }
+
+    #loader.loader-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loader-logo{
+      width:140px;
+      animation:pulse 1.5s infinite;
+      filter:drop-shadow(0 0 25px #2563eb);
+    }
+
+    @keyframes pulse{
+      0%{transform:scale(.9);}
+      50%{transform:scale(1.08);}
+      100%{transform:scale(.9);}
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div id="loader">
+    <img src="/logo.png" class="loader-logo" alt="Rafael.dev">
+</div>
+
+<div id="root"></div>
+
+<script type="module" src="/src/main.tsx"></script>
+
+</body>
 </html>
